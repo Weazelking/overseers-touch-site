@@ -61,7 +61,7 @@ nav a:hover { text-decoration: underline; color: #fff; }
   color: #fff;
   padding: 56px 0 64px;
 }
-.hero h1 { font-size: 2.3rem; line-height: 1.2; margin: 0 0 16px; }
+.hero h1 { font-size: 2.3rem; line-height: 1.2; margin: 0 0 16px; color: #FFE500; }
 .hero p { font-size: 1.15rem; max-width: 640px; margin: 0; color: #e8edf3; }
 
 main { padding: 44px 0 60px; }
