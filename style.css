@@ -1,0 +1,112 @@
+:root {
+  --navy: #1f3a5f;
+  --navy-dark: #152a45;
+  --gold: #c9a45c;
+  --text: #1e2530;
+  --muted: #55606e;
+  --bg: #fbfaf7;
+  --card: #ffffff;
+  --line: #e4e0d6;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a { color: var(--navy); }
+a:hover { color: var(--navy-dark); }
+
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+header {
+  background: var(--navy);
+  color: #fff;
+  border-bottom: 4px solid var(--gold);
+}
+header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.brand {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.35rem;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+nav a:first-child { margin-left: 0; }
+nav a:hover { text-decoration: underline; color: #fff; }
+
+.hero {
+  background: var(--navy);
+  color: #fff;
+  padding: 56px 0 64px;
+}
+.hero h1 { font-size: 2.3rem; line-height: 1.2; margin: 0 0 16px; }
+.hero p { font-size: 1.15rem; max-width: 640px; margin: 0; color: #e8edf3; }
+
+main { padding: 44px 0 60px; }
+
+h1, h2, h3 { font-family: Georgia, serif; color: var(--navy-dark); }
+main h1 { font-size: 2rem; margin-top: 0; }
+h2 { font-size: 1.4rem; margin-top: 2.2em; }
+h3 { font-size: 1.15rem; margin-top: 1.6em; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  margin: 24px 0;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--gold);
+  border-radius: 8px;
+  padding: 20px;
+}
+.card h3 { margin-top: 0; }
+.card p { margin: 0; font-size: 1rem; color: var(--muted); }
+
+.notice {
+  background: #fff;
+  border-left: 4px solid var(--gold);
+  padding: 14px 18px;
+  margin: 24px 0;
+}
+
+.updated { color: var(--muted); font-size: 0.95rem; }
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 28px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+footer a { margin-right: 16px; }
+
+@media (max-width: 600px) {
+  body { font-size: 18px; }
+  .hero h1 { font-size: 1.8rem; }
+  nav a { margin-left: 0; margin-right: 14px; }
+}
