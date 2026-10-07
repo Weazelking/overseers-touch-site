@@ -105,6 +105,9 @@ footer {
 }
 footer a { margin-right: 16px; }
 
+/* Trademark symbol: small and raised without changing line spacing. */
+sup { font-size: 0.5em; vertical-align: super; line-height: 0; }
+
 @media (max-width: 600px) {
   body { font-size: 18px; }
   .hero h1 { font-size: 1.8rem; }
