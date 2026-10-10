@@ -106,6 +106,21 @@ footer {
 footer a { margin-right: 16px; }
 
 /* Trademark symbol: small and raised without changing line spacing. */
+/* Sign-up and call buttons */
+.cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 26px; }
+.btn { display: inline-block; padding: 14px 26px; border-radius: 10px; font-family: -apple-system, "Segoe UI", Arial, sans-serif; font-size: 1.05rem; font-weight: 700; text-decoration: none; text-align: center; min-width: 180px; border: 2px solid transparent; }
+.btn-gold { background: var(--gold); color: var(--navy-dark); }
+.btn-gold:hover { background: #d8b673; color: var(--navy-dark); }
+.btn-outline { border-color: #fff; color: #fff; }
+.btn-outline:hover { background: rgba(255,255,255,0.12); color: #fff; }
+.btn-navy { background: var(--navy); color: #fff; }
+.btn-navy:hover { background: var(--navy-dark); color: #fff; }
+.btn-outline-navy { border-color: var(--navy); color: var(--navy); }
+.btn-outline-navy:hover { background: #eef1f5; }
+nav a.nav-cta { background: var(--gold); color: var(--navy-dark); padding: 4px 12px; border-radius: 6px; font-weight: 700; }
+nav a.nav-cta:hover { color: var(--navy-dark); text-decoration: none; background: #d8b673; }
+@media (max-width: 600px) { .cta-row .btn { flex: 1 1 100%; } }
+
 sup { font-size: 0.5em; vertical-align: super; line-height: 0; }
 
 @media (max-width: 600px) {
