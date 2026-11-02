@@ -121,6 +121,27 @@ nav a.nav-cta { background: var(--gold); color: var(--navy-dark); padding: 4px 1
 nav a.nav-cta:hover { color: var(--navy-dark); text-decoration: none; background: #d8b673; }
 @media (max-width: 600px) { .cta-row .btn { flex: 1 1 100%; } }
 
+.cta-row .btn { display: inline-flex; align-items: center; justify-content: center; }
+
+/* "Curious? We'll call you back" button: larger, two lines, gentle pulse */
+.btn-call { display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+  padding: 16px 30px; border-radius: 12px; border: 3px solid var(--gold); min-width: 300px; line-height: 1.25;
+  animation: call-pulse 2.6s ease-in-out infinite; }
+.btn-call-q { font-size: 1.15rem; font-weight: 800; }
+.btn-call-a { font-size: 0.98rem; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.btn-call-light { background: #fff; color: var(--navy-dark); }
+.btn-call-light:hover { background: #fff7e6; color: var(--navy-dark); }
+.btn-call-dark { background: var(--navy); color: #fff; }
+.btn-call-dark:hover { background: var(--navy-dark); color: #fff; }
+.btn-call:hover, .btn-call:focus-visible { animation-play-state: paused; }
+@keyframes call-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(201, 164, 92, 0.75); transform: scale(1); }
+  50% { box-shadow: 0 0 0 12px rgba(201, 164, 92, 0); transform: scale(1.03); }
+}
+/* People who turn off motion in their device settings get a still button. */
+@media (prefers-reduced-motion: reduce) { .btn-call { animation: none; } }
+@media (max-width: 600px) { .btn-call { min-width: 0; padding: 16px 18px; } .btn-call-q { font-size: 1.08rem; } }
+
 sup { font-size: 0.5em; vertical-align: super; line-height: 0; }
 
 @media (max-width: 600px) {
