@@ -154,8 +154,8 @@ sup { font-size: 0.5em; vertical-align: super; line-height: 0; }
 
 /* Home page video */
 .video { margin: 20px 0 8px; }
-.video video { display: block; width: 100%; max-width: 560px; aspect-ratio: 1 / 1; height: auto; border-radius: 12px; background: var(--navy); border: 1px solid var(--line); box-shadow: 0 6px 18px rgba(31, 58, 95, 0.15); }
-.video figcaption { max-width: 560px; margin-top: 10px; font-size: 1rem; color: var(--muted); }
+.video video { display: block; width: 100%; max-width: 680px; aspect-ratio: 4 / 3; height: auto; border-radius: 12px; background: var(--navy); border: 1px solid var(--line); box-shadow: 0 6px 18px rgba(31, 58, 95, 0.15); }
+.video figcaption { max-width: 680px; margin-top: 10px; font-size: 1rem; color: var(--muted); }
 
 /* "Physical and virtual protection": tag + icon */
 .cards.two-ways { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
