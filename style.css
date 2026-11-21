@@ -199,3 +199,7 @@ button.btn { border: 2px solid transparent; }
   .print-only { display: block; }
   .print-source { font-size: 9.5pt; color: #333; margin: 0 0 12pt; }
 }
+
+/* Facebook link in the header */
+nav a.nav-fb { display: inline-flex; align-items: center; gap: 5px; vertical-align: middle; }
+nav a.nav-fb svg { color: #E6CB86; flex: none; }
