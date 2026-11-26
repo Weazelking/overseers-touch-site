@@ -4,7 +4,7 @@
 // Builds legal/<doc>-<effective date>.pdf from the site's own print layout.
 const { chromium } = require("playwright");
 const SITE = require("path").resolve(__dirname, "..");
-const docs = [["terms.html", "terms-2026-10-23.pdf", "Terms of Service", "October 23, 2026"],
+const docs = [["terms.html", "terms-2026-12-01.pdf", "Terms of Service", "December 1, 2026"],
               ["privacy.html", "privacy-2026-11-15.pdf", "Privacy Policy", "November 15, 2026"],
               ["sms-terms.html", "sms-terms-2026-09-29.pdf", "SMS Terms", "September 29, 2026"]];
 (async () => {
