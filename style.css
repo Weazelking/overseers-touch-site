@@ -203,3 +203,11 @@ button.btn { border: 2px solid transparent; }
 /* Facebook link in the header */
 nav a.nav-fb { display: inline-flex; align-items: center; gap: 5px; vertical-align: middle; }
 nav a.nav-fb svg { color: #E6CB86; flex: none; }
+
+/* Launch offer box in the hero */
+.launch-offer{margin:22px 0 4px;max-width:640px;border:2px solid #FFE500;border-radius:14px;padding:16px 20px;background:rgba(255,255,255,.06);box-shadow:0 0 18px rgba(255,229,0,.25)}
+.hero .launch-offer p{margin:0;max-width:none}
+.hero .launch-kicker{font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#E6CB86}
+.hero .launch-price{margin-top:6px!important;font-size:1.1rem;line-height:1.45}
+.hero .launch-price strong{color:#FFE500}
+.hero .launch-fine{margin-top:6px!important;font-size:.85rem;opacity:.85}
