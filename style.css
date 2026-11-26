@@ -123,11 +123,10 @@ nav a.nav-cta:hover { color: var(--navy-dark); text-decoration: none; background
 
 .cta-row .btn { display: inline-flex; align-items: center; justify-content: center; }
 
-/* "Curious? We'll call you back" button: larger, two lines, gentle pulse */
+/* "Curious? We'll call you back" button: larger, two lines, steady neon glow */
 .btn-call { --neon: #FFE500; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
   padding: 16px 30px; border-radius: 12px; border: 4px solid var(--neon); min-width: 300px; line-height: 1.25;
-  box-shadow: 0 0 10px 2px rgba(255, 229, 0, 0.85), 0 0 26px 6px rgba(255, 229, 0, 0.35);
-  animation: call-pulse 2.2s ease-in-out infinite; }
+  box-shadow: 0 0 10px 2px rgba(255, 229, 0, 0.85), 0 0 26px 6px rgba(255, 229, 0, 0.35); }
 .btn-call-q { font-size: 1.15rem; font-weight: 800; }
 .btn-call-a { font-size: 0.98rem; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 .btn-call-light { background: #fff; color: var(--navy-dark); }
@@ -135,13 +134,12 @@ nav a.nav-cta:hover { color: var(--navy-dark); text-decoration: none; background
 .btn-call-dark { background: var(--navy); color: #fff; }
 .btn-call-dark:hover { background: var(--navy-dark); color: #fff; }
 .btn-call-dark .btn-call-a { color: var(--neon); }
-.btn-call:hover, .btn-call:focus-visible { animation-play-state: paused; }
 @keyframes call-pulse {
   0%, 100% { box-shadow: 0 0 10px 2px rgba(255, 229, 0, 0.85), 0 0 26px 6px rgba(255, 229, 0, 0.35); transform: scale(1); }
   50% { box-shadow: 0 0 18px 6px rgba(255, 229, 0, 1), 0 0 44px 14px rgba(255, 229, 0, 0.45); transform: scale(1.03); }
 }
-/* People who turn off motion in their device settings get a still (but still glowing) button. */
-@media (prefers-reduced-motion: reduce) { .btn-call { animation: none; } }
+/* People who turn off motion in their device settings get a still (but still glowing) launch box. */
+@media (prefers-reduced-motion: reduce) { .launch-offer { animation: none; } }
 @media (max-width: 600px) { .btn-call { min-width: 0; padding: 16px 18px; } .btn-call-q { font-size: 1.08rem; } }
 
 sup { font-size: 0.5em; vertical-align: super; line-height: 0; }
@@ -204,10 +202,13 @@ button.btn { border: 2px solid transparent; }
 nav a.nav-fb { display: inline-flex; align-items: center; gap: 5px; vertical-align: middle; }
 nav a.nav-fb svg { color: #E6CB86; flex: none; }
 
-/* Launch offer box in the hero */
-.launch-offer{margin:22px 0 4px;max-width:640px;border:2px solid #FFE500;border-radius:14px;padding:16px 20px;background:rgba(255,255,255,.06);box-shadow:0 0 18px rgba(255,229,0,.25)}
-.hero .launch-offer p{margin:0;max-width:none}
-.hero .launch-kicker{font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#E6CB86}
-.hero .launch-price{margin-top:6px!important;font-size:1.1rem;line-height:1.45}
-.hero .launch-price strong{color:#FFE500}
-.hero .launch-fine{margin-top:6px!important;font-size:.85rem;opacity:.85}
+/* Launch offer box in the hero: white, bold, pulsing neon border; the whole box links to sign-up */
+.launch-offer{display:block;margin:24px 0 6px;max-width:640px;border:4px solid #FFE500;border-radius:14px;padding:18px 22px;background:#fff;color:#111;text-decoration:none;
+  box-shadow:0 0 10px 2px rgba(255,229,0,.85),0 0 26px 6px rgba(255,229,0,.35);animation:call-pulse 2.2s ease-in-out infinite}
+.launch-offer:hover,.launch-offer:focus-visible{animation-play-state:paused;background:#fffbe0;color:#111}
+.hero .launch-offer p{margin:0;max-width:none;color:#111;font-weight:800}
+.hero .launch-kicker{font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+.hero .launch-price{margin-top:8px!important;font-size:1.2rem;line-height:1.4}
+.hero .launch-price strong{color:#111;font-weight:900;font-size:1.35rem}
+.hero .launch-fine{margin-top:8px!important;font-size:.9rem}
+.hero .launch-go{margin-top:10px!important;font-size:1rem;text-decoration:underline;text-underline-offset:3px}
